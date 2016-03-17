@@ -15,13 +15,20 @@ Usage
 -----
 
 ```
-% ./yang-extractor.pl
+host% ./yang-extractor.pl
 Usage:
   ./yang-extractor.pl <rfc-file>
 ```
 
+Grab your favourite RFC file from the Interwebs and extract the YANG modules:
 ```
-% ./yang-extractor.pl draft-ietf-i2rs-yang-network-topo-02.txt
-Saving 224 lines into ietf-network@2015-12-08.yang
-Saving 312 lines into ietf-network-topology@2015-12-08.yang
+host% curl -O https://tools.ietf.org/id/draft-ietf-i2rs-yang-l3-topology-01.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 56535  100 56535    0     0  36363      0  0:00:01  0:00:01 --:--:-- 36356
+host% ./yang-extractor.pl draft-ietf-i2rs-yang-l3-topology-01.txt
+Saving 443 lines into ietf-l3-unicast-igp-topology@2015-12-11.yang
+Saving 327 lines into ietf-ospf-topology@2015-12-11.yang
+Saving 273 lines into isis-topology@2015-12-11.yang
+host%
 ```
