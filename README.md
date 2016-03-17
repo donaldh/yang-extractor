@@ -19,3 +19,9 @@ Usage
 Usage:
   ./yang-extractor.pl <rfc-file>
 ```
+
+```
+% ./yang-extractor.pl draft-ietf-i2rs-yang-network-topo-02.txt
+Saving 224 lines into ietf-network@2015-12-08.yang
+Saving 312 lines into ietf-network-topology@2015-12-08.yang
+```
