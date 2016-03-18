@@ -2,7 +2,10 @@
 
 use v6;
 
-sub MAIN($rfc-file) {
+#| Extract YANG modules from an RFC specification
+sub MAIN(
+    $rfc-file    #= The RFC file name
+) {
     my regex begins { '<CODE BEGINS>' }
     my regex file { 'file' \s+ '"' $<name>=[ <-[ " ]> + ] '"' }
     my regex body { .*? }
