@@ -23,7 +23,12 @@ sub MAIN(
             my $indent = $contents ~~ /^\s+/;
 
             # Strip page headers and footers
-            $contents ~~ s:g/ \n+ [ ^^ \S \N* ]+ \n+//;
+            $contents ~~ s:g/ \n ** 3
+                              ^^ \S \N*    # footer
+                              \n+          # page break
+                              ^^ \S \N*    # header
+                              \n ** 3
+                            //;
 
             # Strip leading indentation
             $contents ~~ s:g/ ^^ "$indent" //;
