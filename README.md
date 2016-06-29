@@ -32,3 +32,26 @@ Saving 327 lines into ietf-ospf-topology@2015-12-11.yang
 Saving 273 lines into isis-topology@2015-12-11.yang
 host%
 ```
+
+Prerequisite
+------------
+
+The yang-extractor.pl script is written in Perl 6 which is available for most platforms.
+
+#### MacOS
+
+The easiest way to install Perl 6 in MacOS is by using Homebrew.
+
+    brew install rakudo-star
+
+#### Windows
+
+Windows users can install the most recent 64 bit or 32 bit MSI of Rakudo Star from:
+
+http://rakudo.org/downloads/star/
+
+#### Linux
+
+There are instructions for building from source on your favourite Linux distribution:
+
+http://rakudo.org/how-to-get-rakudo/
