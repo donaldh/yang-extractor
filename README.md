@@ -55,3 +55,10 @@ http://rakudo.org/downloads/star/
 There are instructions for building from source on your favourite Linux distribution:
 
 http://rakudo.org/how-to-get-rakudo/
+
+Related Projects
+----------------
+
+There is a tool called xym that is recommended by the IETF:
+
+https://github.com/xym-tool/xym
